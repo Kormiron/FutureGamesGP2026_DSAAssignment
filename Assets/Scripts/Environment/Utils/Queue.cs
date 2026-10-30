@@ -4,7 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace Utils {
+    [System.Serializable]
     public class MyQueue {
+        [SerializeField]
         private List<Task> tasks = new List<Task>();
 
         //add element to queue
