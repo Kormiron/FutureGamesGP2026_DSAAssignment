@@ -26,15 +26,15 @@ public class SortOfWorkers {
         for(int j = Low; j < High; j++) { 
             if(string.Compare(Array[j].LastEntranceInEngineRoom, Pivot) <= 0) {
                 i++;
-                Employee temp = Array[i];
+                Employee Temp = Array[i];
                 Array[i] = Array[j];
-                Array[j] = temp;
+                Array[j] = Temp;
             }
         }
 
-        Employee tempPivot = Array[i + 1];
+        Employee TempPivot = Array[i + 1];
         Array[i + 1] = Array[High];
-        Array[High] = tempPivot;
+        Array[High] = TempPivot;
 
         return i + 1;
     }

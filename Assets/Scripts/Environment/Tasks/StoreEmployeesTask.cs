@@ -24,12 +24,7 @@ namespace Environment.Tasks {
             }
 
             //For understad,Did it work correctly
-            foreach(var Employee in StoredEmployeesArray) {
-                Debug.Log($"Name: {Employee.Name},\nID: {Employee.EmployeeId}" +
-                    $"\nEngine Room Clearance: {Employee.HasEngineRoomClearance}" +
-                    $"\nLast Entrance: {Employee.LastEntranceInEngineRoom}" +
-                    $"\nLast Exit: {Employee.LastExitFromEngineRoom}");
-            }
+            
         }
 
         public Employee[] GetStoredArray() {
