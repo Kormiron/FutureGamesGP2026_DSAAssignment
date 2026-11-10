@@ -22,8 +22,6 @@ namespace Environment.Tasks {
             if(StoredEmployeesArray != null) {
                 Debug.Log($"Successfully completed: {StoredEmployeesArray.Length}");
             }
-
-            //For understad,Did it work correctly
             
         }
 

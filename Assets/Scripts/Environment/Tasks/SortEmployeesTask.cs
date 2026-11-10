@@ -16,10 +16,6 @@ namespace Environment.Tasks {
             SortOfWorkers.QuickSortByEntrance(SortedEmployeesArray);
 
             Debug.Log($"Successfully sorted {SortedEmployeesArray.Length} employees using Quicksort!");
-
-            foreach(var employee in SortedEmployeesArray) {
-                Debug.Log($"[Sorted] Name: {employee.Name} | Last Entrance: {employee.LastEntranceInEngineRoom}");
-            }
         }
         public Employee[] GetSortedArray() {
             return SortedEmployeesArray;
