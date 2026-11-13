@@ -5,8 +5,7 @@ namespace Environment.Tasks {
     [CreateAssetMenu(fileName = "StoreEmployeesTask", menuName = "Tasks/Store Employees")]
     public class StoreEmployeesTask : Task {
 
-        [SerializeField]
-        private ReadJSON LoadTask;
+        [SerializeField] private ReadJSON LoadTask;
 
         private Employee[] StoredEmployeesArray;
 

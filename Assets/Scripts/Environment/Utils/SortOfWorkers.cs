@@ -3,7 +3,6 @@ using static DataOfWorkers;
 
 public class SortOfWorkers {
     public static void QuickSortByEntrance(Employee[] Array) {
-        if(Array == null || Array.Length <= 1) return;
         QuickSort(Array, 0, Array.Length - 1);
     }
 

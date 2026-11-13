@@ -18,18 +18,17 @@ namespace Environment.Tasks {
 
             Employee[] SortedArray = SortTask.GetSortedArray();
 
-            // I'm not do we need write our own Benchmark so I use System.Diagnostics
+            
             Stopwatch Timer = Stopwatch.StartNew();
 
             List<Employee> Suspects = SearchInRange.FindSuspectsInRagnge(SortedArray, StartTimePoint, EndTimePoint);
 
             Timer.Stop();
 
+            UnityEngine.Debug.Log("=== WEEK 4: SEARCH BENCHMARK ===");
             UnityEngine.Debug.Log($"Binary Search Benchmark Completed in {Timer.Elapsed.TotalMilliseconds:F4} ms ({Timer.ElapsedTicks} ticks)");
             UnityEngine.Debug.Log($"Found {Suspects.Count} suspects entering between {StartTimePoint} and {EndTimePoint}:");
-            foreach(var Suspect in Suspects) {
-                UnityEngine.Debug.Log($"[SUSPECT] ID: {Suspect.EmployeeId} | Name: {Suspect.Name} | Entrance: {Suspect.LastEntranceInEngineRoom}| HasEngineRoomClearance: {Suspect.HasEngineRoomClearance} ");
-            }
+            
 
         }
     }
